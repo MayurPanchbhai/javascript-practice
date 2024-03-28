@@ -1,31 +1,34 @@
 let header = document.getElementById("header");
 
 header.innerHTML=`
-<nav class="navbar  d-fixed">
-        <div class="container-fluid px-5">
-            <div>
-                <a class="navbar-brand d-flex align-items-center " href="#">
-                    <img src="/javascript-practice/img/8e97ca232981539af46c42ce525daeb0.jpg" alt="Logo" class="d-inline-block align-text-top" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 12px;">
-                    Mayur Panchbhai
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/javascript-practice/img/8e97ca232981539af46c42ce525daeb0.jpg" alt="Logo" class="d-inline-block align-text-top" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 12px;">
+            Mayur Panchbhai
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/panchbhaimayur-921131242/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> Linked In
                 </a>
-            </div>
-            <div class="d-flex justify-content-evenly middle-div " >
-                <a class="" href="../index.html">
-                  Home
+                <a class="nav-link" href="https://twitter.com/Mayur_Panchbh_i" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
                 </a>
-                <a class="" href="https://www.linkedin.com/in/panchbhaimayur-921131242/" target="_blank">
-                  <i class="fa-brands fa-linkedin-in"></i> Linked In
+                <a class="nav-link" href="https://wa.me/qr/J3A6M4GKFHD5D1" target="_blank">
+                    <button type="button" class="btn btn-light">WhatsApp <i class="fab fa-whatsapp"></i></button>
                 </a>
-                <a class="" href="https://twitter.com/Mayur_Panchbh_i" target="_blank">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  Twitter
-                </a>
-            </div>
-            <div>
-                <a href="https://wa.me/qr/J3A6M4GKFHD5D1"><button type="button" class="btn btn-light" target="_blank">Whatapp <i class="fa-brands fa-whatsapp"></i> </button></a>
             </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
 `
 
 // add this href for the  twitter
