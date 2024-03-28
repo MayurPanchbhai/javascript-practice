@@ -1,0 +1,344 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .middle-div{
+            width: 45%;
+        }
+        .middle-div a{
+            text-decoration: none;
+        }
+
+        footer{
+            background-color: rgb(0, 92, 250);
+            color: white ;
+        }
+        .footer-icon{
+            color: white;
+            margin: 0 8px;
+            transition: 200ms ease-in-out    ;
+        }
+        .footer-icon:hover{
+            transform: scale(1.9);
+        }
+        .navbar{
+            background-color:#007bff
+        }
+        .middle-div a{
+            color: white;
+            transition: 200ms ease-in-out;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar  d-fixed">
+        <div class="container-fluid px-5">
+            <div>
+                <a class="navbar-brand d-flex align-items-center " href="#">
+                    <img src="img/8e97ca232981539af46c42ce525daeb0.jpg" alt="Logo" class="d-inline-block align-text-top" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 12px;">
+                    Mayur Panchbhai
+                </a>
+            </div>
+            <div class="d-flex justify-content-evenly middle-div " >
+                <a class="" href="#">
+                    Home
+                  </a>
+                  <a class="" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i> Linked In
+                  </a>
+                  <a class="" href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    Twitter
+                  </a>
+            </div>
+            <div>
+                <a href="https://wa.me/qr/J3A6M4GKFHD5D1"><button type="button" class="btn btn-light">Whatapp <i class="fa-brands fa-whatsapp"></i> </button></a>
+            </div>
+        </div>
+      </nav>
+      <!-- header end -->
+<!--     
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-4 my-4 border-top ">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span >&copy; 2024 Mayur</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-x-twitter footer-icon"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram footer-icon"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin-in footer-icon"></i></a></li>
+        </ul>
+    </footer>
+</body> -->
+<!-- </html> --> 
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Questions Practice</title>
+    <meta name="description" content="Discover expertly crafted JavaScript problem solutions, including LeetCode challenges, by Nitish Khobragade and codingninjanitish. Explore comprehensive question-answer pairs covering various JavaScript concepts to enhance your programming skills. Elevate your JavaScript proficiency with expert guidance from Nitish and codingninjanitish.">
+    <link rel="icon" type="image/x-icon" href="https://nitishkhobragade.github.io/portfolio.nitish/img/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg> -->
+          <span class="ml-3 text-xl">Nitish Khobragade</span>
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#" class="mr-5 hover:text-gray-900">Home</a>
+          <a class="mr-5 hover:text-gray-900" href="https://wa.me/+918982324497/?text=I%would%20like%20to%20talk" target="_blank">Contact</a>
+          <a class="mr-5 hover:text-gray-900" href="https://nitishkhobragade.github.io/portfolio.nitish/">Services</a>
+          <a class="mr-5 hover:text-gray-900">About</a>
+        </nav>
+        <a
+          class="inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-200 rounded text-base mt-4 md:mt-0" href="https://wa.me/+918982324497/?text=I%would%20like%20to%20talk" target="_blank" >
+          Whatsapp
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-2 h-2 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <!-- header ended -->
+     <!-- anchor tags for specific program -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto">
+      <div class="flex flex-col text-center w-full mb-10">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">JavaScript BOM (Browser Object Model)</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <ul class="flex flex-wrap w-full justify-center">
+          <li class="p-2">
+            <a href="./js-BOM/window-object/window-object.html" class="text-indigo-500">Window Object</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">History Object</a>
+          </li>
+
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">Navigator Object</a>
+          </li>
+
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">Screen Object</a>
+          </li>
+          <!-- Add more anchor tags as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- anchor tags for specific program ended -->
+
+    <!-- anchor tags for specific program -->
+    <section class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto">
+      <div class="flex flex-col text-center w-full mb-10">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">JavaScript DOM (Document Object Model)</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <ul class="flex flex-wrap w-full justify-center">
+          <li class="p-2">
+            <a href="link_to_specific_program_page1.html" class="text-indigo-500">getElementById</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">getElementsByClassName()</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">getElementsByName</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">getElementsByTagName</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">JS innerHTML property</a>
+          </li>
+          <li class="p-2">
+            <a href="link_to_specific_program_page2.html" class="text-indigo-500">JS innerText property</a>
+          </li>
+          <!-- Add more anchor tags as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- anchor tags for specific program ended -->
+
+  <!-- anchor tags for specific program -->
+  <section class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto">
+    <div class="flex flex-col text-center w-full mb-10">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">JavaScript validation</h1>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <ul class="flex flex-wrap w-full justify-center">
+        <li class="p-2">
+          <a href="link_to_specific_program_page1.html" class="text-indigo-500">JS form validation</a>
+        </li>
+        <li class="p-2">
+          <a href="link_to_specific_program_page2.html" class="text-indigo-500">JS email validation</a>
+        </li>
+        <!-- Add more anchor tags as needed -->
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- anchor tags for specific program ended -->
+
+
+
+    <!-- footer started -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">CodingNinjaNitish</span>
+        </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2024 CodingNinjaNitish —
+          <a
+            href=""
+            class="text-gray-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@nitishkhobragade</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!-- footer ended -->
+  </body>
+</html>
