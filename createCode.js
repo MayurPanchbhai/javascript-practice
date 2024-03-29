@@ -4,12 +4,12 @@
 // array.copyWithin(target, start, end)
 // target - position where the copied element take place
 // Start :- from which index it is gonna start the copying
-//  end : till the specified index
+//  end : before the specified index
 
 
-var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
-// place at 0th position, the element between 1st and 2nd position.  
-console.log(arr);
-var result=arr.copyWithin(0,1,2);  //if we given the target as 2/3 it will not replace the element before the indexcing 
-console.log(result); //And this methos change the original array also 
+var arr=["AngularJS","Node.js","JQuery","Bootstrap" , 89]  
+// place from 0th position, the elements between 1st and 3rd position.  
+var result=arr.copyWithin(0,1,3);  //here the replacement not happen till the thired index it will end before it 
+//and also will keep repeating the second last index until it reaches the final array length
+console.log(result); 
 console.log(arr); 
