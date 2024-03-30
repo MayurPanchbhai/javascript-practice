@@ -34,12 +34,11 @@
 
 const arr=[22,3,44,7,58,8]
 
-function con(value){
-    return value>2;
-}
-
-
-console.log(arr.every(con));
+function test(element, index, array) {  
+    return index < 4;  
+  }  
+console.log([21,32,2,43].every(test)); //true  
+console.log([21,32,2,43,35].every(test)); //false  
 </div>
 <!-- your code editor ends here  -->
 </div>
