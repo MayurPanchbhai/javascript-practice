@@ -28,15 +28,18 @@
 <div class="editor-container">
   <!-- your code editor starts here  -->
 <div id="editor"><!--Write Your Code in This div-->
-  // Array :- It is collection more the single value inside an variable
-  // entries(): method creates a new iterator object of an array, holding the key/value pairs for every value in the array.
-  
-  const arr=[2,3,4,5,6,7];
-  let itr = arr.entries();//as the array is an type of object this method assign the key and values pair therefore when we iterate if using the for of loop it return [keys,value] pairs
-  
-  for(let e of itr){
-      console.log(e);
-  }
+// Array :- It is collection more the single value inside an variable
+// every() : this method check the condition and return the boolean value if it is satisfy the condition 
+//array.every(callback(currentvalue,index,arr),thisArg)  
+
+const arr=[22,3,44,7,58,8]
+
+function con(value){
+    return value>2;
+}
+
+
+console.log(arr.every(con));
 </div>
 <!-- your code editor ends here  -->
 </div>
