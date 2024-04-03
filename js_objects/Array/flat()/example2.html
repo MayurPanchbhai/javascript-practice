@@ -27,22 +27,24 @@
 </div>
 <div class="editor-container">
   <!-- your code editor starts here  -->
-<div id="editor">
-  <!--Write Your Code in This div-->
+<div id="editor"><!--Write Your Code in This div-->
 // Array :- It is collection more the single value inside an variable
+// flat(): this method flatten the array into an new array
+// const newArr = Arr.flat(take the depth as argument)
 
-// JavaScript Array directly (new keyword)
-const ArrName =new Array();
+const arr1=["a","b",[3,5,6,"b",["h",78]]];
 
 
-// example
-const Arr = new Array();//creating  array
+const flatArray =arr1.flat();//if we not given the depth it will only flatten the array upto depth 1
+const flatArray2 =arr1.flat(4);//even if we given the greater number than depth it will not give an error
 
-Arr[0]="Mayur";//adding data
-Arr[1]=21;
+console.log(flatArray);
+console.log(flatArray2);
+console.log(arr1);//it uses the deep copies so not chaanges the original array
 
-console.log(Arr);//printing data
-
+//                   INSTRUCTION
+//the output you are seeing is not correct please copy the code and run that
+//code into an another compiler other than this.
 </div>
 <!-- your code editor ends here  -->
 </div>
