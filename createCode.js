@@ -1,14 +1,11 @@
 // Array :- It is collection more the single value inside an variable
-// fill():- fills  elements of the given array with the specified static values.
+// from() :- create the new array which hold the shallow copy of the (it will change the original array because shallow copy shares the same reference)
 
-// arr.fill(value,start, end) 
-// value - The static value to be filled.
-// start - It is optional. It represents the index from where the value starts filling. By default, it is 0.
-// end - It is optional. It represents the index where the value stops filling. By default, it is length-1.
+// Array.from(object,map_fun,thisArg);
+// object: It is the name of the array-like or iterable object on which from() method will be applied.
+// map_fun: It is an optional parameter used for calling the elements of the array via map() function.
+// thisArg: An optional parameter whose value is used as 'this' when we execute the map_fun
 
-const arr1=[1,2,3,4,5];
 
-const arr1Copy = arr1.fill("m",1,4)//it will fill the "m" from start index to end index
-
-console.log(arr1);// and this method modify the original array
-console.log(arr1Copy);
+const arr=Array.from({length:5},(_,index) =>index+1);
+console.log(arr);
