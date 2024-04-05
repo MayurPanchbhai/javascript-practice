@@ -1,11 +1,18 @@
 // Array :- It is collection more the single value inside an variable
-// from() :- create the new array which hold the shallow copy of the (it will change the original array because shallow copy shares the same reference)
+// filter(): extract the element from array which is satisfy the condition
 
-// Array.from(object,map_fun,thisArg);
-// object: It is the name of the array-like or iterable object on which from() method will be applied.
-// map_fun: It is an optional parameter used for calling the elements of the array via map() function.
-// thisArg: An optional parameter whose value is used as 'this' when we execute the map_fun
+// array.filter(callback(currentvalue,index,arr),thisArg)  
 
+// callback - It represents the function that test the condition.
+// currentvalue - The current element of array.
+// index - It is optional. The index of current element.
+// arr - It is optional. The array on which filter() operated.
+// thisArg - It is optional. The value to use as this while executing callback.
 
-const arr=Array.from({length:5},(_,index) =>index+1);
-console.log(arr);
+const arr1=[1,2,3,4,5,6,7,8]
+
+const arr2=arr1.filter(function(value){
+    return value<5
+});
+console.log(arr1);
+console.log(arr2);

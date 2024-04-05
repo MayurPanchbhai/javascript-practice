@@ -28,31 +28,23 @@
 <div class="editor-container">
   <!-- your code editor starts here  -->
 <div id="editor"><!--Write Your Code in This div-->
-
 // Array :- It is collection more the single value inside an variable
-// from() :- create the new array which hold the shallow copy of the (it will change the original array because shallow copy shares the same reference)
-    
-// Array.from(object,map_fun,thisArg);
-// object: It is the name of the array-like or iterable object on which from() method will be applied.
-// map_fun: It is an optional parameter used for calling the elements of the array via map() function.
-// thisArg: An optional parameter whose value is used as 'this' when we execute the map_fun
+// filter(): extract the element from array which is satisfy the condition
 
-//Used in array
-const arr1=[1,2,3,4,5];
+// array.filter(callback(currentvalue,index,arr),thisArg)  
 
-const arr2 =Array.from(arr1);
+// callback - It represents the function that test the condition.
+// currentvalue - The current element of array.
+// index - It is optional. The index of current element.
+// arr - It is optional. The array on which filter() operated.
+// thisArg - It is optional. The value to use as this while executing callback.
+
+const arr1=[1,2,3,4,5,6,7,8]
+
+const arr2=arr1.filter(function(value){
+    return value<5})
 console.log(arr1);
 console.log(arr2);
-
-
-// used in string
-
-let srt ="You are viewing an example of string";
-const arr3=Array.from(srt);
-
-console.log(srt);
-console.log(arr3);
-    
 </div>
 <!-- your code editor ends here  -->
 </div>
