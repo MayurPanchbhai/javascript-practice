@@ -1,15 +1,11 @@
 // Array :- It is collection more the single value inside an variable
-// find():-This method return the first element that satisfy coondition
+// findIndex():- Return the index of first element that satify the condition if element is not present it will return -1
 
-// Array.find(callback(,valueindex,arr,),ThisArg)
-
-
-const arr1=[1,2,3,4,5,3,2];
-
-const result =arr1.find(val)
+// Array.findIndex(callback(value.index,arr),thisArg)
 
 
-function val(element){
-    return element>2;
-}
-console.log(result);
+const arr1=[1,2,3,4,1,4,3];
+const val = arr1.findIndex(4);//this is not posible because it always expects the callback function
+
+console.log(val);
+console.log(arr1.findIndex(1));//this is not posible because it always expects the callback function
