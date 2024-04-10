@@ -1,14 +1,9 @@
 // Array :- It is collection more the single value inside an variable
-// forEach() : This method invoke the function for each element of array
+// include() :- this method return if the array contains the specific element or not 
 
-// Array.forEach(callback(value,index,arr),thisArg)
+// array.includes(element, start)
 
+const arr1=[1,2,3,4,5,8];
 
-const arr1=[1,2,3,4,5];
-
-const arr2=arr1.forEach(function (value){// foreach does not return a new array 
-    return value*2;
-})
-
-console.log(arr1);
-console.log(arr2);//this is will give the undefined output
+console.log(arr1.includes(2));
+console.log(arr1.includes(6));
