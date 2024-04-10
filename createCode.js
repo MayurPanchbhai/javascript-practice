@@ -1,11 +1,14 @@
 // Array :- It is collection more the single value inside an variable
-// findIndex():- Return the index of first element that satify the condition if element is not present it will return -1
+// forEach() : This method invoke the function for each element of array
 
-// Array.findIndex(callback(value.index,arr),thisArg)
+// Array.forEach(callback(value,index,arr),thisArg)
 
 
-const arr1=[1,2,3,4,1,4,3];
-const val = arr1.findIndex(4);//this is not posible because it always expects the callback function
+const arr1=[1,2,3,4,5];
 
-console.log(val);
-console.log(arr1.findIndex(1));//this is not posible because it always expects the callback function
+const arr2=arr1.forEach(function (value){// foreach does not return a new array 
+    return value*2;
+})
+
+console.log(arr1);
+console.log(arr2);//this is will give the undefined output
