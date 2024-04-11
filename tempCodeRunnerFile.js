@@ -1,13 +1,15 @@
 // Array :- It is collection more the single value inside an variable
-// concat :- It return a new array by merging two or more than two arrays.
-
-// e.g. let try to concat an array along with element directly if it is possible
-const lang1 = ["python","java"];
-const lang2 = ["script" , "tailwind"]
+// keys(): This method creates and returns a new iterator object which holds the key for every index in the array. This method does not affect the original array.
 
 
-const output =lang1.concat(lang2 ,"adding element","Github" ,8);
+const arr1=[1,2,3,"m",89];
+let r =arr1.keys();
 
-console.log(output);//It only create new array and not change the original arrays
-console.log(lang1);//not change like me
-console.log(lang2);
+for(let key of r){
+    console.log(key);
+    // console.log(arr1[key]);
+};
+
+for(let key of r){//this loop is not executing
+    console.log(arr1[key]);
+};
