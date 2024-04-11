@@ -1,9 +1,15 @@
 // Array :- It is collection more the single value inside an variable
-// include() :- this method return if the array contains the specific element or not 
+// keys(): This method creates and returns a new iterator object which holds the key for every index in the array. This method does not affect the original array.
 
-// array.includes(element, start)
 
-const arr1=[1,2,3,4,5,8];
+const arr1=[1,2,3,"m",89];
+let r =arr1.keys();
 
-console.log(arr1.includes(2));
-console.log(arr1.includes(6));
+for(let key of r){
+    console.log(key);
+    // console.log(arr1[key]);
+};
+
+for(let key of r){//this loop is not executing
+    console.log(arr1[key]);
+};
