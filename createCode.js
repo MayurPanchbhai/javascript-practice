@@ -1,15 +1,7 @@
 // Array :- It is collection more the single value inside an variable
-// keys(): This method creates and returns a new iterator object which holds the key for every index in the array. This method does not affect the original array.
+// lastOndexOf():- this method is same as the indexOf but only the difference is that it will the index of the last element present in the array
 
 
-const arr1=[1,2,3,"m",89];
-let r =arr1.keys();
+const arr1=[2.5,6,7,"t",6,9];
 
-for(let key of r){
-    console.log(key);
-    // console.log(arr1[key]);
-};
-
-for(let key of r){//this loop is not executing
-    console.log(arr1[key]);
-};
+console.log(arr1.lastIndexOf(6));
