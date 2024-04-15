@@ -1,7 +1,9 @@
 // Array :- It is collection more the single value inside an variable
-// lastOndexOf():- this method is same as the indexOf but only the difference is that it will the index of the last element present in the array
+// array.push():- add one or more than one elemrnt to the array
 
+const arr=[11,2,3,4,5,26];
+console.log(arr);
 
-const arr1=[2.5,6,7,"t",6,9];
+arr.push("number",6);
 
-console.log(arr1.lastIndexOf(6));
+console.log(arr);
