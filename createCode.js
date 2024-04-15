@@ -1,9 +1,6 @@
-// Array :- It is collection more the single value inside an variable
-// array.push():- add one or more than one elemrnt to the array
+// shift():removes and return first element form array
 
-const arr=[11,2,3,4,5,26];
-console.log(arr);
+const arr=[12,3,4,5,9,6,78];
+let ele = arr.shift();
 
-arr.push("number",6);
-
-console.log(arr);
+console.log(ele);
