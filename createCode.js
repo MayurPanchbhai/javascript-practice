@@ -1,6 +1,8 @@
-// shift():removes and return first element form array
+// toLocalstring(): - convert array elements to string
 
-const arr=[12,3,4,5,9,6,78];
-let ele = arr.shift();
+const names=["Leclerc","Hamilton","Verstappen","Vettel"]
 
-console.log(ele);
+let srt=names.toLocaleString();
+
+console.log(srt);
+// console.log(typeof(srt));
