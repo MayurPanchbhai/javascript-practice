@@ -1,13 +1,18 @@
-// values:- this method creates a new array iterator object that carries the values specified at each array index. We can iterate the array elements via loops or iterator methods.
+// Object :- A javaScript object is an entity having state and behavior.
 
+// By using an Object constructor
 
-const arr=["v","a","l","u","e","s"];
-console.log(arr);
-
-let val=arr.values();
-
-console.log(val);
-
-for (let x of val){
-    console.log(x);
-}
+function emp(id,name,salary){  
+    this.id=id;  
+    this.name=name;  
+    this.salary=salary;  
+      
+    this.changeSalary=changeSalary;  
+    function changeSalary(otherSalary){  
+    this.salary=otherSalary;  
+    }  
+}  
+e=new emp("what number comes after 4","beetlejuice",35);  
+console.log(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45);  
+console.log(e.id+" "+e.name+" "+e.salary);  
