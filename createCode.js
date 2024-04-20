@@ -1,18 +1,15 @@
-// Object :- A javaScript object is an entity having state and behavior.
+// create() :-used to create new object from specified prototype of the object 
 
-// By using an Object constructor
+// Object.create(prototype[propertiesObject])
 
-function emp(id,name,salary){  
-    this.id=id;  
-    this.name=name;  
-    this.salary=salary;  
-      
-    this.changeSalary=changeSalary;  
-    function changeSalary(otherSalary){  
-    this.salary=otherSalary;  
-    }  
-}  
-e=new emp("what number comes after 4","beetlejuice",35);  
-console.log(e.id+" "+e.name+" "+e.salary);  
-e.changeSalary(45);  
-console.log(e.id+" "+e.name+" "+e.salary);  
+const man ={
+    printIntro:function (){
+        console.log(`My name is ${this.name} . Am I machine? ${this.isMachine}`);
+    }
+}
+
+const me = Object.create(man);
+me.name="Gaurav";//name is property of the "me" but not on "person"
+me.isMachine ="May Be"//inherited property can be over written
+
+me.printIntro();
