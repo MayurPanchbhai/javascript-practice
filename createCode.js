@@ -1,18 +1,12 @@
-// freeze(): freeze the object that prevent new prperty being add to it.
-
-// Object.freeze(object)
-
-const obj1={
-    name:"Maximus"
-}
-
-const obj2 = Object.freeze(obj1);
-
-obj2.Fuel2="98octane";//new property can't be added here
-
-obj1.Fuel2="98octane";
-
-console.log(obj2);
-console.log(obj1);
+// Object.getOwnPropertyDescriptors():_ This method returns all own property descriptors of a given object. The difference between getOwnPropertyDescriptors() and getOwnPropertyDescriptor() method is that getOwnPropertyDescriptors() method ignores symbolic properties.
 
 
+// Object.getOwnPropertyDescriptors(obj)  
+
+const object1 = {  
+    property1: 103  
+};  
+    
+  const descriptors1 = Object.getOwnPropertyDescriptors(object1);  
+  console.log(descriptors1.property1.writable);  
+  console.log(descriptors1.property1.value);  
