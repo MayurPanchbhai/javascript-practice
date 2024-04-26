@@ -73,3 +73,32 @@ function runCode() {
 
 // // Copy button click event listener
 // document.getElementById('copyButton').addEventListener('click', copyCode);
+
+
+
+// changing the theme dark and white
+let Theme = document.getElementById("Bg");
+let bd = document.querySelector("body");
+let counter = 0;
+let ed = document.getElementById("editor");
+
+Theme.addEventListener('click',() =>{
+    // console.log("clciked")
+    // body.classList.add='dark';
+    if(counter%2==0){
+        bd.style.backgroundColor="black";
+        bd.style.color="white";
+        
+        Theme.innerText="White"
+        ed.style.border="2px solid crimson";
+        ed.style.borderRadius="10px";
+        counter++;
+    }
+    else{
+        bd.style.backgroundColor="white";
+        bd.style.color="black";
+        counter++;
+        Theme.innerText="Black"
+    }
+    console.log(counter)
+})
