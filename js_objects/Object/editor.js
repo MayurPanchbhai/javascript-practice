@@ -102,3 +102,8 @@ Theme.addEventListener('click',() =>{
     }
     console.log(counter)
 })
+
+
+
+
+// adding js

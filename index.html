@@ -38,8 +38,12 @@
           transition: 200ms ease-in-out;
       }
 
-
+      
   </style>
+
+<!--  theme of the website  -->
+<link rel="stylesheet" href="theme.css">
+
   </head>
   <body>
     <nav class="navbar  d-fixed">
@@ -162,6 +166,15 @@
         </div>
       </div>
     </section>
+    <section id="themeSection">
+      <div class="theme1 active" style="border-left: 2px solid red;border-top-left-radius: 7px;border-bottom-left-radius: 7px;" onclick="white()" id="theme1">
+        <div >White</div>
+      </div>
+      <div class="theme2"  style="border-right: 2px solid red;border-top-right-radius: 7px;border-bottom-right-radius: 7px;" onclick="dark()" id="theme2">
+        <div >Dark</div>
+      </div>
+    </section>
+    
 
     <!-- footer started -->
     <div id="footer"></div>
@@ -170,5 +183,6 @@
     <!-- script for common header and footer -->
     <script src="header.js"></script>
     <script src="footer.js"></script>
+    <script src="theme.js"></script>
   </body>
 </html>
