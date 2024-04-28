@@ -43,3 +43,26 @@
     background-color: blue;
     color: white;
 }
+
+
+
+/* button responsive */
+
+@media (max-width :480px){
+    .responsive{
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: baseline !important;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .responsive h1{
+        display: contents;
+    }
+
+    #footer div{
+        display: flex !important;
+        justify-content: center !important
+    }
+}
