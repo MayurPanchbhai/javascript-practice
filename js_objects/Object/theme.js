@@ -4,9 +4,12 @@ let bd = document.querySelector("body");
 let counter = 0;
 let ed = document.getElementById("editor");
 let TT = document.getElementById("themeText");
-let heading = document.querySelector("h1");
+let headings = document.querySelectorAll("h1"); // Select all h1 elements
 
 Theme.addEventListener('click',() =>{
+
+    
+
     // console.log("clciked")
     // body.classList.add='dark';
     if(counter%2==0){
@@ -15,8 +18,11 @@ Theme.addEventListener('click',() =>{
         // console.log(counter);
         TT.innerText="White";
         Theme.style.borderColor="white";
-        heading.forEach(h1 => {
-            heading.style.color="white";
+        
+
+
+        headings.forEach(h1 => { // Loop through all h1 elements and change color
+            h1.style.color = "white";
         });
         
 
