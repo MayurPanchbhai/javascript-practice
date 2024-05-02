@@ -1,8 +1,9 @@
-// search(): method is used to search the regular expression in the given string. This method returns -1, if match is not found.
+// sunstring():method fetch the string on the basis of provided index and returns the new sub string. It works similar to the slice() method with a difference that it doesn't accepts negative indexes. This method doesn't make any change in the original string.
 
-// String.search("ch/srt");
+// String.substring(start,end);
 
-let srt="A necessary sacrifice to bring peace to this planet. We can not let the humans pay for our mistakes.";
+let srt ="As long as power flows through any of my circuits, Megatron, I'll fight you.";
 
-console.log(srt.search("planet"));
-console.log(srt.search("Cybertron"));
+let srt2=srt.substring(2,49);
+
+console.log(srt2);
