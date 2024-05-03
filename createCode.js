@@ -1,9 +1,9 @@
-// sunstring():method fetch the string on the basis of provided index and returns the new sub string. It works similar to the slice() method with a difference that it doesn't accepts negative indexes. This method doesn't make any change in the original string.
+//  toString(): It provides a string representing the particular object.
 
-// String.substring(start,end);
+let n=78;
 
-let srt ="As long as power flows through any of my circuits, Megatron, I'll fight you.";
+let srt=toString(789);
 
-let srt2=srt.substring(2,49);
-
-console.log(srt2);
+console.log(srt);
+console.log(typeof(srt));
+console.log(typeof(n));
