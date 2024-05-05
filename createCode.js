@@ -1,9 +1,8 @@
-//  toString(): It provides a string representing the particular object.
+// trim():- It trims the white space from the left and right side of the string.
 
-let n=78;
+let srt="    Dodge Viper   ";
 
-let srt=toString(789);
+let srt1=srt.trim();
 
 console.log(srt);
-console.log(typeof(srt));
-console.log(typeof(n));
+console.log(srt1);
