@@ -38,7 +38,14 @@
           transition: 200ms ease-in-out;
       }
 
-      
+      @media (max-width:720px){
+        .middle-div{
+          display:none !important;
+        }
+        #whatsapp{
+          display: none !important;
+        }
+      }
   </style>
 
 <!--  theme of the website  -->
@@ -46,7 +53,7 @@
 
   </head>
   <body>
-    <nav class="navbar  d-fixed">
+    <nav class="navbar d-fixed">
       <div class="container-fluid px-5">
           <div>
               <a class="navbar-brand d-flex align-items-center " href="#" style="color:white;">
@@ -66,8 +73,11 @@
                   Twitter
                 </a>
           </div>
-          <div>
+          <div id="whatsapp">
               <a href="https://wa.me/qr/J3A6M4GKFHD5D1"><button type="button" class="btn btn-light">Whatapp <i class="fa-brands fa-whatsapp"></i> </button></a>
+          </div>
+          <div>
+            <button><i></i></button>
           </div>
       </div>
     </nav>
