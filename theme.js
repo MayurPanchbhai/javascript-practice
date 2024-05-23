@@ -48,3 +48,19 @@ function dark(){
 
     console.log(universalThemeNumber);
 }
+
+
+// header responsive 
+
+let elements = document.getElementsByClassName("middle-div");
+
+        function OpenHeader() {
+            if (elements.length > 0) {
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.display = "block";
+                }
+                console.log("nothing");
+            } else {
+                console.log("No elements found with the class name 'middle-div'");
+            }
+        }
