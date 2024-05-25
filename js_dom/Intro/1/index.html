@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- code starts here -->
+    <div class="container mx-auto">
+        <div class="left">
+            <label>HTML</label>
+            <!-- write your html code inside textarea -->
+            <textarea id="html-code" onkeyup="run()"> </textarea>
+
+            <label>CSS</label>
+            <!-- write your css code inside textarea -->
+            <textarea id="css-code" onkeyup="run()"> </textarea>
+
+            <label>Javascript</label>
+            <!-- Write your javascript code inside textarea -->
+            <textarea id="js-code" onkeyup="run()"> </textarea>
+        </div>
+        <div class="right">
+            <label>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+<script>
+
+    function run(){
+        let htmlCode=document.getElementById("html-code").value;
+        let cssCode=document.getElementById("css-code").value;
+        let jsCode=document.getElementById("js-code").value; 
+        let output=document.getElementById("output"); 
+
+        output.contentDocument.body.innerHTML =htmlCode+ "<style>" + cssCode + "</style>"; 
+        output.contentWindow.eval(jsCode);
+    }
+
+
+
+</script>    
+</body>  
+</html>
