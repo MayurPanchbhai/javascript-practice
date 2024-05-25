@@ -10,19 +10,52 @@
 </head>
 <body>
     <!-- code starts here -->
+    <div class="container d-flex justify-center h-1">
+        <h1>1. JavaScript can change all the HTML elements in the page</h1>
+    </div>
+    
     <div class="container mx-auto">
+        
         <div class="left">
             <label>HTML</label>
             <!-- write your html code inside textarea -->
-            <textarea id="html-code" onkeyup="run()"> </textarea>
+            <textarea id="html-code" onkeyup="run()"><div>
+        <div>
+                <h1 class="head">Intial Heading</h1>
+                <h1 class="head">Intial Heading</h1>
+                <p id="para">Sample paragraph</p>
+                <button id="Button">click to change</button>
+            </div>
+</div>
+</textarea>
 
             <label>CSS</label>
             <!-- write your css code inside textarea -->
-            <textarea id="css-code" onkeyup="run()"> </textarea>
+            <textarea id="css-code" onkeyup="run()"> .head{
+    color: red;
+    font-size: 2vw;
+ }
+
+ #para{
+    color: blue;
+ }
+
+ #Button{
+    background-color: yellow;
+ }</textarea>
 
             <label>Javascript</label>
             <!-- Write your javascript code inside textarea -->
-            <textarea id="js-code" onkeyup="run()"> </textarea>
+            <textarea id="js-code" onkeyup="run()"> let h=document.getElementsByClassName("head");
+ let p=document.getElementById("para");
+ let b=document.getElementById("Button");
+ 
+ b.addEventListener("click", function(){
+     for(let hd of h){
+         hd.innerHTML="Hello"
+     }
+     p.innerHTML="mayur";
+ })</textarea>
         </div>
         <div class="right">
             <label>Output</label>
